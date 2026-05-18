@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "name": "Mate clásico",
+    "description": "Mate clasico tallado a mano y con decoracion clasica",
+    "price": 15000,
+    "image": "/img/mate1.jpg"
+    
+  },
+  {
+    "id": "2",
+    "name": "Mate tallado",
+    "description":"Mate clasico tallado y pintado a mano, con frases biblicas",
+    "price":15000,
+    "image": "/img/mate2.jpg"
+
+  },
+  {
+    "id": "3",
+    "name": "Mate Argentina",
+    "description":"Mate clasico tallado a mano y pintado con detalles de Argentina",
+    "price": 25000,
+    "image": "/img/mate3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Set de mate",
+    "description":"Set de mate, que incluye yerbera y azucarera",
+    "price": 30000,
+    "image": "/img/mate4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Mate y yerbera",
+    "description": "Set de mate, que incluye yerbera o azucarera, ideal para regalo",
+    "price": 25000,
+    "image": "/img/mate5.jpg"
+  }
+]
+  
