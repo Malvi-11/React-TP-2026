@@ -19,15 +19,16 @@ export const CartProvider = ({children}) =>{
     const [cart, setCart] = useState([]);
 
     const isInCart = (item) =>{
-        const InCart = cart.some((element) => element.id === item.id);
-        return InCart;
+        const inCart = cart.some((element) => element.id === item.id);
+        return inCart;
     };
     const addItem = (item) =>{
         if (isInCart(item)){
             alert("El producto ya existe en el carrito");
             return;
         };
-        setCart({...cart, item});
+
+        setCart([...cart, item]);
         alert("producto agregado al carrito");  
     }
     const removeItem = (id) => {
@@ -52,7 +53,15 @@ export const CartProvider = ({children}) =>{
     };
 
 
-    const values = {addItem, removeItem, getTotalItems, getCartTotal, clearCart, checkout};
+    const values = {
+        cart,
+        addItem, 
+        removeItem, 
+        getTotalItems, 
+        getCartTotal, 
+        clearCart, 
+        checkout,
+    };
     return <CartContext.Provider value={values}>{children}</CartContext.Provider>;
 
 };
