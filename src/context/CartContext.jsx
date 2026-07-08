@@ -33,7 +33,7 @@ export const CartProvider = ({children}) =>{
     }
     const removeItem = (id) => {
         const updatedCart = cart.filter((element) => element.id !==id);
-        setCard(updatedCart);
+        setCart(updatedCart);
         alert("Producto eliminado");
     };
     const getTotalItems = () =>{
