@@ -12,5 +12,5 @@ export const CartSummary = () => {
         FINALIZAR COMPRA
       </button>
     </>
-    );
-}
+  );
+};

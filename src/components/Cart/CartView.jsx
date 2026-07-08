@@ -2,6 +2,8 @@ import { useCart } from "../../context/CartContext"
 import { Link } from "react-router-dom";
 import { CartList } from "./CartList";
 import { CartSummary } from "./CartSummary";
+import "./Cart.css";
+
 
 export const CartView = ()  => {
 const {cart} = useCart()

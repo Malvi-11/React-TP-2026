@@ -30,7 +30,7 @@ export const CartProvider = ({children}) =>{
 
         setCart([...cart, item]);
         alert("producto agregado al carrito");  
-    }
+    };
     const removeItem = (id) => {
         const updatedCart = cart.filter((element) => element.id !==id);
         setCart(updatedCart);
