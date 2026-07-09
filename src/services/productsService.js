@@ -6,8 +6,8 @@ import{
     doc,
     query,
     where,
-}from "firebase/firestore";
-import { db } from"../firebase/config";
+} from "firebase/firestore";
+import { db } from "../firebase/config,js";
 
 
 const productsRef = collection(db, "products");
@@ -60,7 +60,7 @@ export const getProductById = async (id) => {
 /*                          SI FILTRAMOS POR CATEGORY                         */
 /* -------------------------------------------------------------------------- */
 export const getByCategory = async (category) => {
-  try {
+   try {
     let queryRef;
 
     //truthy
@@ -77,11 +77,12 @@ export const getByCategory = async (category) => {
       return { id: doc.id, ...doc.data() };
     });
     return productsFormat;
-  } catch (error) {
+     } catch (error) {
     console.error("Error al filtrar productos:", error);
     return [];
   }
 };
+
 
 /* -------------------------------------------------------------------------- */
 /*                              ALTA DE PRODUCTO                              */

@@ -20,9 +20,6 @@ export const ItemListContainer = () => {
       .finally(() => setLoading(false));
   }, [category] );
 
-
-  
-
   if (loading) return <p>Cargando...</p>;
 
   return (
